@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-Vector {
+  width: 42px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-icon-send {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+

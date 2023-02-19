@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-close {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-phone {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-user {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-checkbox-unchecked {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+

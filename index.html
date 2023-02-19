@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Web Studio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="modal is-hidden" data-modal>
+            <div class="inner-modal">
+                <h3 class="inner-title">Leave your information and we'll call you back</h3>
+                <form name="modal form" autocomplete="on" novalidate>
+                  <label for="user_name" class="form-label">
+                    Name
+                      <svg class="icon-user icon-form">
+                        <use href="images/icomoonmodal/icons.svg#icon-user" class="icon-test"></use>
+                      </svg>
+                      <input type="name" name="name" id="user_name" class="inner-contact" placeholder>
+                  </label>
+                  <label for="user_phone" class="form-label">
+                    Telephone
+                    <svg class="icon-phone icon-form">
+                        <use href="images/icomoonmodal/icons.svg#icon-phone"></use>
+                      </svg>
+                    <input type="tel" name="phone" id="user_phone" class="inner-contact" placeholder>
+                  </label>
+                  <label for="user_email" class="form-label">
+                    E-mail
+                    <svg class="icon-mail icon-form">
+                        <use href="images/icomoonmodal/icons.svg#icon-mail"></use>
+                      </svg>
+                    <input type="email" name="e-mail"  id="user_email" class="inner-contact" placeholder>
+                  </label>
+                  <label for="user_comments" class="form-label">
+                    Comments
+                    <textarea name="comments" placeholder="Enter the text" class="inner-comments"></textarea>
+                  </label>
+                  <label for="user_checkbox" class="check-box">  
+                    <input type="checkbox" name="terms and conditions" class="terms-conditions" placeholder>
+                    <svg class="icon-check">
+                      <use href="images/icomoonmodal/icons.svg#icon-check"></use>
+                    </svg>
+                    I agree with the letter and accept the <span class="terms-conditions-last">Terms and Conditions</span>
+                  </label>
+                  <button type="submit" class="send-button">Send</button>
+                </form>
+              <div class="close-bg-modal" data-modal-close="">
+                <svg class="icon-close">
+                  <use href="images/icomoonmodal/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+            </div>
+        </div>
+        <header class="page-header">  
+        <section class="section">
+            <div class="container">
+        <ul class="grid__logo"><a class="grid__logo__studio" href="WebStudio"></a>
+            <span class="logo__highlight">Web</span>Studio</a>
+        </ul>
+            </div>
+        </section>
+        <nav class="page__section__list">
+            <div class="container__menu">
+        <ul class="grid__item__list unstyled-list">
+                    <li class="grid__item__menu"><a class="grid__studio link" href="index.html">Studio</a></li>
+                    <li class="grid__item__menu"><a class="grid__portofolio link" href="portofolio.html">Portofolio</a></li>
+                    <li class="grid__item__menu"><a class="grid__contacts link" href="contacts">Contacts</a></li>
+        </ul> 
+            </div>
+    </nav>
+            <div class="container__contacts">
+                <ul class="grid__item__contacts unstyled-list">
+                    <li  class="grid__item__menu"><a class="grid__mail1 link" href="mailto:info@devstudio.com">
+                        <svg class="header__icon" width="16" height="12">
+                          <use href="images/icomoon/symbol-defs.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="grid__item__menu"><a class="grid__mail1 link" href="tel:+12127724150">
+                        <svg class="header__icon" width="10" height="16">
+                          <use href="images/icomoon/symbol-defs.svg#icon-tel"></use>
+                        </svg>+1 212-772-4150</a>
+                    </li>
+                  </ul>
+            </div>
+        </header>
+    <main>
+        <div class="container">
+            <section class="title-section">
+                <h1  class="title">EFFECTIVE SOLUTIONS FOR <br>
+                     YOUR BUSINESS</h1>
+                    <button class="button-request" type="button" data-modal-open>
+                        Request our service</button> 
+            </section>
+        </div>
+        <section class="technology__section">
+            <div class="container__technology">
+        <ul class="grid">
+            <li class="grid__item">
+           <span class="grid__span">
+             <svg class="svg">
+             <use href="./images/icomoon/symbol-defs.svg#icon-antenna"></use>
+             </svg>
+            </span>
+             <h2 class="grid__title">ATTENTION TO DETAILS</h2>
+             <p class="grid__paragraf">
+                   We go into all the details and processes <br>
+                   of your business to develop a <br>
+                   customized solution.
+               </p>
+            </li>
+            <li class="grid__item">
+                <span class="grid__span">
+                 <svg class="svg">
+                 <use href="./images/icomoon/symbol-defs.svg#icon-clock"></use>
+                 </svg>
+                </span>
+                 <h2 class="grid__title">PUNCTUALITY</h2>
+                <p class="grid__paragraf">
+                    With us, you can feel safe and secure.<br>
+                 An important principle of the company: <br>
+                  respect your time and deadlines.
+                </p>
+            </li>
+            <li class="grid__item">
+                <span class="grid__span">
+                <svg class="svg">
+                <use href="./images/icomoon/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+            </span>
+                <h2 class="grid__title">PLANNING</h2>
+                 <p class="grid__paragraf">
+                    You will be able to observe and <br>
+                    participate in every phase of solution <br>
+                    development and implementation.
+                 </p>
+            </li>
+            <li class="grid__item">
+                <span class="grid__span">
+                <svg class="svg">
+                <use href="./images/icomoon/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+            </span>
+                <h2 class="grid__title">MODERN TECHNOLOGIES</h2>
+                <p class="grid__paragraf">
+                    We use innovative tools to solve <br>
+                    assigned tasks. It's time to simplify work <br>
+                    processes.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </section> 
+        <section class="what__section">
+        <div class="container">
+          <h3 class="section__heading">What we do</h3>
+        <ul class="grid__heading unstyled-list">
+            <li class="grid__item__heading">
+            <img class="grid__image" height="294" width="370" src="images/img2.png" alt="calculator"/>
+            <div class="grid__text"><p class="grid__text__paragrafe">DESKTOP APPS</p>
+            </div>
+            </li>
+            <li class="grid__item__heading">
+            <img class="grid__image" height="294" width="370" src="images/img.png"  alt="telefon"/>
+            <div class="grid__text"><p class="grid__text__paragrafe">MOBILE APPS</p>
+            </div>
+            </li> 
+            <li class="grid__item__heading">
+            <img class="grid__image" height="294" width="370" src="images/img (1).png"  alt="tableta"/>
+            <div class="grid__text"><p class="grid__text__paragrafe">DESIGN SOLUTIONS</p>
+            </div>
+            </li> 
+            </ul>
+        </div>
+        </section>
+    <section class="our__section">
+            <div class="our__container">
+            <h3 class="section__heading__team">Our Team</h3>
+        <ul class="grid__team grid--four">
+            <li class="grid__item__team"><img height="260" width="270"src="images/img2.jpg">
+                <p class="paragraf__name">Christopher Walker </p>
+                <p class="paragraf__job">Product Designer</p>
+                <ul class="unstyled-list social-list">
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="images/icomoon/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+                </a>
+                </li>
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+                </a>
+                </li>
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+                </a>
+                </li>
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="./images/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+                </li>
+                </ul> 
+            </li>
+            <li class="grid__item__team"><img height="260" width="270" src="images/img.jpg">
+                <p class="paragraf__name">Kylie Evans</p>
+                <p class="paragraf__job">Frontend Developer</p>
+                <ul class="unstyled-list social-list">
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="./images/icomoon/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+                </a>
+                </li>
+                <li>
+                <a href="a" target="_blank" class="social-link">
+                <svg class="social-icons">
+                <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+                </a>
+                </li>
+                <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+            <li class="grid__item__team"><img height="260" width="270" src="images/img (1).jpg">
+                <p class="paragraf__name">Ryan Harris </p>
+                <p class="paragraf__job">Marketing</p>
+                <ul class="unstyled-list social-list">
+                    <li>
+                    <a href="a" target="_blank" class="social-link">
+                     <svg class="social-icons">
+                     <use href="./images/icomoon/symbol-defs.svg#icon-instagram"></use>
+                     </svg>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                         <svg class="social-icons">
+                         <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
+                         </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul> 
+            </li> 
+            <li class="grid__item__team"><img height="260" width="270"src="images/img (3).jpg">
+                <p class="paragraf__name">Tyler Moore</p>
+                <p class="paragraf__job">UI Designer</p>
+                <ul class="unstyled-list social-list">
+                    <li>
+                    <a href="a" target="_blank" class="social-link">
+                     <svg class="social-icons">
+                     <use href="./images/icomoon/symbol-defs.svg#icon-instagram"></use>
+                     </svg>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                         <svg class="social-icons">
+                         <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
+                         </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a" target="_blank" class="social-link">
+                        <svg class="social-icons">
+                        <use href="./images/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul> 
+            </li>
+        </ul> 
+        </div> 
+    </section>
+        <section class="section__regular">
+        <div class="container__regular">  
+            <h2 class="grid__regular">Regular Customers</h2></li>
+            <ul class="grid__regular__customers unstyled-list">
+            <li>
+                <a href="#" target="_blank" class="grid__regular__logo">
+                 <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo"></use></svg>
+                </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="grid__regular__logo">
+                     <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo-1"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="grid__regular__logo">
+                    <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo-2"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="grid__regular__logo">
+                    <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo-3"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="grid__regular__logo">
+                    <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo-4"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="grid__regular__logo">
+                    <svg class="svglogo" width="106" height="60"><use href="./images/icomoon/symbol-defs.svg#icon-Logo-5"></use></svg>
+                    </a>
+                </li>
+            </ul> 
+            </li>
+        </div>
+        </section>
+    </main>
+    <footer>   
+            <section class="page-section1">
+                <div class="main-menu-contacts1">
+                <a class="WebStudio1 link" href="WebStudio">
+                <span class="logo-highlight1">Web</span>Studio
+                </a>
+                <address class="adress-mail-tel">
+                    <ul class="link unstyled-list">
+                        <li><a class="adress link" href="https://goo.gl/maps/NUs2hbe2w2btfPFn6" target="_blank">695 Park Ave, NY 10065, USA</a></li>
+                        <li><a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="tel link" href="tel:+12127724150">+1 212-772-4150</a></li>
+                    </ul>
+                </address>
+            </div>
+                    <div class="main-menu-contacts-icons">
+                        <h3 class="section-icons">Find us on</h3>    
+                    <ul class="unstyled-list social-list1">
+                        <li>
+                        <a href="a" target="_blank" class="social-link1">
+                         <svg class="social-icons1">
+                         <use href="./images/icomoon/symbol-defs.svg#icon-instagram"></use>
+                         </svg>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="a" target="_blank" class="social-link1">
+                             <svg class="social-icons1">
+                             <use href="./images/icomoon/symbol-defs.svg#icon-twitter"></use>
+                             </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a" target="_blank" class="social-link1">
+                            <svg class="social-icons1">
+                            <use href="./images/icomoon/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a" target="_blank" class="social-link1">
+                            <svg class="social-icons1">
+                            <use href="./images/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+            <div class="subscribe-container">
+                <h2 class="footer-social-media-title">Subscribe to the newsletter</h2>
+                <form class="subscribe-form">
+                    <input type="email" name="email" class="imput-form" placeholder="E-mail">
+                    <button class="footer-button" type="button">
+                      Subscribe
+                      <svg class="plane-icon">
+                        <use href="./images/icomoonsubscribe/symbol-defs.svg#icon-icon-send"></use>
+                      </svg>
+                    </button>
+                  </form> 
+        </section>
+    </footer>
+    <script src="./js/modal.js"></script>
+    </body>
+</html>
