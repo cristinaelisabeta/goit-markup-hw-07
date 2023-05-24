@@ -10,6 +10,54 @@
     </head>
     <body>
         <div class="modal is-hidden" data-modal>
+    <div class="modal__inner">
+        <h3 class="modal__title">Leave your information and we'll call you back</h3>
+        <form name="modal-form" autocomplete="on" novalidate>
+            <label for="user_name" class="form-label">
+                Name
+                <svg class="icon-user form-label__icon">
+                    <use href="images/icomoonmodal/icons.svg#icon-user" class="icon-test"></use>
+                </svg>
+                <input type="text" name="name" id="user_name" class="form-label__input" placeholder>
+            </label>
+            <label for="user_phone" class="form-label">
+                Telephone
+                <svg class="icon-phone form-label__icon">
+                    <use href="images/icomoonmodal/icons.svg#icon-phone"></use>
+                </svg>
+                <input type="tel" name="phone" id="user_phone" class="form-label__input" placeholder>
+            </label>
+            <label for="user_email" class="form-label">
+                E-mail
+                <svg class="icon-mail form-label__icon">
+                    <use href="images/icomoonmodal/icons.svg#icon-mail"></use>
+                </svg>
+                <input type="email" name="email" id="user_email" class="form-label__input" placeholder>
+            </label>
+            <label for="user_comments" class="form-label">
+                Comments
+                <textarea name="comments" placeholder="Enter the text" class="form-label__textarea"></textarea>
+            </label>
+
+            <label for="user_checkbox" class="form-label form-label--checkbox">
+                
+                <svg class="icon-check form-label__icon">
+                    <use href="images/icomoonmodal/icons.svg#icon-check"></use>
+                </svg>
+                <input type="checkbox" name="terms_and_conditions" class="form-label__checkbox">
+                I agree with the letter and accept the <span class="form-label__terms-conditions">Terms and Conditions</span>
+            </label>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+        <div class="close-bg-modal" data-modal-close>
+            <svg class="icon-close">
+                <use href="images/icomoonmodal/icons.svg#icon-close"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+        <!-- <div class="modal is-hidden" data-modal>
             <div class="inner-modal">
                 <h3 class="inner-title">Leave your information and we'll call you back</h3>
                 <form name="modal form" autocomplete="on" novalidate>
@@ -53,7 +101,7 @@
                 </svg>
               </div>
             </div>
-        </div>
+        </div> -->
         <header class="page-header">  
         <section class="section">
             <div class="container">

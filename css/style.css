@@ -452,7 +452,7 @@ margin-top: 32px;
     pointer-events: none;
     transform: scale(0);
 }
-.inner-modal {
+.modal__inner {
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
@@ -461,7 +461,7 @@ margin-top: 32px;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     padding: 40px;
 }
-.inner-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -503,7 +503,7 @@ form {
     height: 12px;
     fill: currentColor;
 }
-.icon-form {
+.form-label__icon {
     position: absolute;
     top: 46%;
     left: 15px;
@@ -517,7 +517,7 @@ form {
 .icon-mail:hover {
     color: #2196F3;
 }
-.inner-contact {
+.form-label__input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -527,7 +527,7 @@ form {
     padding-left: 40px;
     cursor: pointer;
 }
-.inner-comments {
+.form-label__textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -537,7 +537,7 @@ form {
     margin-bottom: 20px;
     padding: 16px 12px;
 }
-.check-box {
+.form-label--checkbox {
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -550,13 +550,10 @@ form {
     left: 1px;
     visibility: hidden;
 }
-.terms-conditions {
-    font-family: Roboto;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #757575;
-    text-align: center;
-    margin: 0 12px;
+.form-label__terms-conditions {
+    color: #2196F3;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .terms-conditions-last {
     color: #2196F3;
@@ -565,7 +562,7 @@ form {
 }
 .send-button {
     text-align: center;
-    margin: 30px 124px;
+    margin: 50px 124px;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
