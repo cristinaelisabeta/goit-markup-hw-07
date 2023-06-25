@@ -25,7 +25,7 @@ img {
     display: inline-block;
     box-sizing: border-box;
 }
-.grid__logo {
+.grid-logo {
     font-family: raleway;
     font-weight: 700;
     font-size: 26px;
@@ -37,38 +37,42 @@ img {
     margin-left: 215px;
     display: flex;
 }
-.grid__logo__studio {
+.grid-logo__item {
+text-decoration: none;
+}
+.grid-logo__studio {
     display: inline-block;
     margin-bottom: 25px;
-    margin-top: 24px;
+    color: #000000;
+    text-decoration: none;
 }  
-.logo__highlight {
+.grid-logo__highlight {
     color: #2196F3;  
 }
-.page__section__list {
+.page-header__nav {
     display: inline-block;
     text-align: center;
     height: 80px;
  }
- .container__menu {
+ .container__nav {
     display: inline-block;
     text-align: center;
     height: 80px;
     margin-top: 0px;
  }
-.grid__item__list {
+.grid-menu {
  margin-left: auto;
  margin-right: 10px;
  display: flex; 
  margin-top: 0px;
 }
-.grid__item__menu {
+.grid-menu__item {
     display: list-item;
 }
 .link:hover {
     color: #2196F3;
 }
-.grid__studio {
+.grid-menu__studio {
     display: flex;
     margin-top: 32px;
     margin-right: 50px;
@@ -93,7 +97,7 @@ img {
 .header__icon:hover {
    color: #2196F3;
 }
-.grid__portofolio {
+.grid-menu__portfolio {
     display: flex;
     margin-top: 32px;
     margin-right: 50px;
@@ -106,7 +110,7 @@ img {
     margin-right: 25px;
 }
 .button-all {
-    margin-left: 542px;
+    margin-left: 442px;
     display: inline-block;
 }
 .background-button:hover {
@@ -259,7 +263,6 @@ img {
     display: flex;
     padding: 0;
     flex-wrap: wrap;
-    justify-content: center;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -16px; 
@@ -340,7 +343,7 @@ img {
     color: #757575;
     margin-left: 24px;
 }
-.grid__contacts {
+.grid-menu__contacts {
     display: flex;
     margin-top: 32px;
     margin-right: 330px;
@@ -357,31 +360,33 @@ img {
     display: inline-block;
     margin-left: 215px;   
 }
-.grid__item__contacts {
+.grid-contacts {
 display: flex;
 margin-top: 32px;
+margin-left: 215px;
+
 }
-.grid__mail1 {
+.grid-contacts__mail {
     font-family: roboto;
     font-size: 14px;
     line-height: 1.14;
     text-align: left;
     vertical-align: top;
     color: #757575;
-    margin-left: 40px;
     display: flex;
     gap: 10px;
 }
 .grid__mail1::after, :before {
    box-sizing: border-box; 
 }
-.grid__tel1 {
+.grid-contacts__phone {
     font-family: roboto;
     font-style: 400;
     font-size: 14px;
     line-height: 1.14;
     color: #757575; 
     margin-right: 215px; 
+    margin-left: 40px;
     gap: 10px; 
 }
 .title-section {
@@ -540,7 +545,6 @@ form {
 .form-label--checkbox {
     position: absolute;
     display: inline-flex;
-    align-items: center;
     color: #757575;
 }
 .icon-check {
@@ -551,6 +555,14 @@ form {
     visibility: hidden;
 }
 .form-label__terms-conditions {
+    width: 396px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: underline;
     cursor: pointer;
@@ -625,20 +637,21 @@ form {
     margin-left: 8px;
     margin-bottom: 16px;
     }
-.grid__span {
+.grid-item__span {
     display: flex;
     background-color: #F5F4FA;
     justify-content: center;
     align-items: center;
     padding: 25px 101.54px 25px 101.54px;
     margin-bottom: 30px;
+    margin-left: 8px;
 }
 .svg {
     width: 70px;
     height: 70px;
     fill: currentColor;
 }
-.grid__title {
+.grid-item__title {
     display: inline-flex;
     margin-bottom: 10px;
     font-weight: 700;
@@ -646,15 +659,17 @@ form {
     line-height: 1.14;
     text-transform: uppercase;
     color: #212121; 
+    margin-left: 8px;
 }
-.grid__paragraf {
+.grid-item__paragraph {
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
+    margin-left: 8px;
 }
-.what__section {
+.what-section {
     width: 1170px;
     height: 386px;
     left: 215px;
@@ -664,11 +679,14 @@ form {
     margin-right: 215px;
     margin-bottom: 94px;
 }
-.grid__heading {
+.grid-heading {
     display: flex;
     margin-bottom: 94px;
 }
-.grid__text {
+.grid-image {
+
+}
+.grid-text {
     background-color: rgba(47, 48, 58, 0.8); 
     color: #FFFFFF;
     font-weight: 700;
@@ -678,11 +696,14 @@ form {
     height: 70px;
     margin-left: 0px;
 }
-.grid__text__paragrafe {
-    margin-bottom: 27px;
-    margin-top: 27px;
+.grid-text__paragraph {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
 }
-.section__heading {
+.section-heading {
     font-family: roboto;
     font-weight: 700;
     font-size: 36px;
@@ -692,7 +713,7 @@ form {
     margin-bottom: 50px;
     margin-left: auto;
 }
-.grid__item__heading {
+.grid-item-heading {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03mm;
@@ -742,7 +763,7 @@ form {
 .social-link:hover {
     color: #2196F3;
 }
-.our__section {
+.our-section {
     background-color: #F5F4FA;
     width: 1600px;
     height: 708px;
@@ -751,7 +772,7 @@ form {
     bottom: 623px;
     display: inline-block;
 }
-.section__heading__team {
+.section-heading-team {
     margin-top: 94px;
     margin-bottom: 50px;
     font-weight: 700;
@@ -761,7 +782,7 @@ form {
     color: #212121;
     text-align: center; 
 }
-.our__container {
+.our-container {
     width: 1600px;
     height: 708px;
     left: 0px;
@@ -771,14 +792,14 @@ form {
 .grid--four {
 
 }
-.grid--four .grid__item {
+/* .grid--four .grid__item {
     flex-basis: calc(100% /4 - 16px);
     min-width: 140px;
     color: #212121;
     text-align: center;
     background-color: #F5F4FA;
-}
-.grid__team {
+} */
+.grid-team {
     list-style: none;
     padding: 0;
     display: inline-block;
@@ -789,7 +810,7 @@ form {
     margin-bottom: -16px;
     margin-top: 0;
 }
-.grid__item__team {
+.grid-item-team {
     margin-bottom: 30px;
     display: inline-block;
     left: 215px;
@@ -798,7 +819,7 @@ form {
     border: 1px solid #eeeeee;
     margin-right: 30px;
 }
-.paragraf__name {
+.paragraf-name {
     margin-top: 30;
     margin-bottom: 20px;
     font-family: roboto;
@@ -808,7 +829,7 @@ form {
     color: #212121;
     text-align: center;
 }
-.paragraf__job {
+.paragraf-job {
     margin-bottom: 16px;
     margin-top: 0;
     font-family: roboto;
@@ -818,7 +839,10 @@ form {
     color: #757575;
     text-align: center;
 }
-.container__regular {
+.section-regular {
+
+}
+.container-regular {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -826,7 +850,7 @@ form {
     justify-content: center;
     flex-direction: column;
 }
-.grid__regular {
+.grid-regular {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -835,7 +859,7 @@ form {
     margin-top: 94px;
     margin-bottom: 50px;
 }
-.grid__regular__customers {
+.grid-regular-customers {
     display: flex;
     width: 170px;
     height: 92px;
@@ -845,7 +869,7 @@ form {
     margin-left: 215px;
     margin-right: 215px;
 }
-.grid__regular__logo {
+.grid-regular-logo {
     display: flex;
     justify-content: center;
     color: #afb1b8;
@@ -882,7 +906,7 @@ footer {
     margin-left: 215px;
     margin-top: 60px; 
 }
-.WebStudio1 {
+.web-studio1 {
     font-family: raleway;
     font-weight: 700;
     font-size: 26px;
@@ -895,7 +919,7 @@ footer {
 .logo-highlight1 {
     color: #2196F3; 
 }
-.adress {
+.address {
     font-family: roboto;
     font-weight: 400;
     font-size: 14px;
@@ -982,7 +1006,7 @@ footer {
 .subscribe-form {
 
 }
-.imput-form {
+.input-form {
     background-color: transparent;
     width: 358px;
     height: 50px;
