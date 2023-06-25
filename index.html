@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web Studio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -10,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="modal is-hidden" data-modal>
+        <!-- <div class="modal is-hidden" data-modal>
     <div class="modal__inner">
         <h3 class="modal__title">Leave your information and we'll call you back</h3>
         <form name="modal-form" autocomplete="on" novalidate>
@@ -56,7 +58,53 @@
             </svg>
         </div>
     </div>
-</div>
+</div> -->
+     <div class="modal modal__is-hidden" data-modal>
+          <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+              <svg class="modal__close__icon icon-user">
+                <use href="images/icomoonmodal/icons.svg#icon-close"></use>
+              </svg>
+            </button>   
+            <form class="modal__form-service" autocomplete="off">
+                <p class="modal__form-service__title">Leave your information and we'll call your back</p>
+                  <label for="user_name">Name
+                    <input type="text" id="user_name" name="name" class="modal__form-service__input">
+                    <svg class="modal__form-service__form-icon icon-user">
+                      <use href="images/icomoonmodal/icons.svg#icon-user"></use>
+                    </svg>
+                  </label>
+                  <label for="user_phone">Telephone
+                    <input type="tel" id="user_phone" name="phone" class="modal__form-service__input">
+                    <svg class="modal__form-service__form-icon icon-user">
+                      <use href="images/icomoonmodal/icons.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                  <label for="user_email">E-mail
+                    <input type="email" id="user_email" name="email" class="modal__form-service__input">
+                    <svg class="modal__form-service__form-icon icon-user">
+                      <use href="images/icomoonmodal/icons.svg#icon-mail"></use>
+                    </svg>
+                  </label>
+                  <label for="message">Comments        
+                    <textarea name="message" id="message" class="modal__form-service__message" rows="6" placeholder="Enter the text"></textarea>
+                  </label>
+                  <label class="modal__form-service__checkbox-terms">
+                    <input type="checkbox" name="terms" />
+                    <span class="modal__form-service__checkbox-replace">
+                      <!-- <svg id="check_square" class="modal__form-service__checkbox-replace__svg">
+                        <use href="./images/icomoonmodal/icons.svg#icon-Vector"></use>
+                      </svg> -->
+                        <svg id="check_img" class="modal__form-service__checkbox-replace__svg">
+                          <use href="images/icomoonmodal/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                      I agree with the letter and accept the&nbsp;<a href="#">Terms and Conditions</a>
+                    </label>
+                  <button class="modal__form-service__btn" type="submit">Send</button>
+              </form>
+          </div>
+        </div>
 
         <!-- <div class="modal is-hidden" data-modal>
             <div class="inner-modal">
@@ -108,7 +156,7 @@
         <div class="container">
             <ul class="grid-logo unstyled-list">
                 <li class="grid-logo__item">
-                    <a class="grid-logo__studio" href="WebStudio">
+                    <a class="grid-logo__studio" href="index.html">
                         <span class="grid-logo__highlight">Web</span>Studio
                     </a>
                 </li>
@@ -122,7 +170,7 @@
                     <a class="grid-menu__studio link" href="index.html">Studio</a>
                 </li>
                 <li class="grid-menu__item">
-                    <a class="grid-menu__portfolio link" href="portfolio.html">Portfolio</a>
+                    <a class="grid-menu__portfolio link" href="portofolio.html">Portfolio</a>
                 </li>
                 <li class="grid-menu__item">
                     <a class="grid-menu__contacts link" href="contacts">Contacts</a>
